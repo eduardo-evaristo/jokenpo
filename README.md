@@ -2,7 +2,9 @@
 
 > Este é um simples e divertido aplicativo mobile de Jokenpô (Pedra, Papel e Tesoura), onde você joga contra a "máquina". Teste sua sorte neste jogo clássico!
 
-🎮 Como funciona?
+---
+
+# 🎮 Como funciona?
 Escolha entre Pedra 石, Papel 📄 ou Tesoura ✂️.
 
 A máquina faz sua escolha aleatoriamente.
@@ -17,6 +19,7 @@ O vencedor é determinado pelas regras clássicas:
 
 Veja o resultado e tente vencer a máquina quantas vezes quiser!
 
+---
 
 ## 👥 Desenvolvedores
 
@@ -25,10 +28,11 @@ Veja o resultado e tente vencer a máquina quantas vezes quiser!
 | Eduardo Evaristo | 123100051 |
 | Rafael Miranda | 123100009 |
 
+---
 
-## 🖼️ Capturas de Tela
+# 🖼️ Capturas de Tela
 
-# Interface de Usuário  
+## Interface de Usuário  
 O aplicativo possui uma interface simples e intuitiva, permitindo que o usuário em uma única tela consiga visualizar a jogada da partida anterior, pontuação e as opções de jogada.
 
 ![Interface de usuário](android/app/src/testscreenshot/userinterface.png)  
