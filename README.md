@@ -40,21 +40,21 @@ O aplicativo possui uma interface simples e intuitiva, permitindo que o usuário
 ---
 
 ## Selecionando a jogada  
-Na parte inferior fica o menu de opções onde o jogador escolhe qual das opções vai jogar, para isto, basta clicar em uma das três imagens.  
+Na parte inferior possui o menu de opções onde o jogador escolhe qual será sua jogada, para isto, basta clicar em uma das três imagens.  
 
 ![Escolhendo jogada](android/app/src/testscreenshot/opcoes.png)  
 
 ---
 
 ## Feedback da jogada  
-Na parte superior está o menu de disputa, onde é possível visualizar a jogada do usuário e do adversário, o ícone da jogada vencedora da rodada ficará demarcada com as bordas na cor verde.  
+Na parte superior está o menu de disputa, onde é possível visualizar a jogada do usuário e do adversário. O ícone da jogada vencedora da rodada, ficará demarcada com as bordas na cor verde.  
 
 ![Gerando resultado](android/app/src/testscreenshot/resultado.png)  
 
 ---
 
 ## Placar  
-Na parte central fica localizado o placar que consta a pontuação individual dos jogadores e quantidade de empates.  
+Na parte central possui o placar que consta a pontuação individual dos jogadores e quantidade de empates.  
 
 ![Placar](android/app/src/testscreenshot/placar.png)  
 
