@@ -21,6 +21,9 @@ class _MainAppState extends State<MainApp> {
   final String assetPath = 'assets/images';
   int _currentUserOption = 1;
   int _currentCpuOption = 1;
+  int _userScore = 0;
+  int _cpuScore = 0;
+  int _ties = 0;
 
   void _cpuSelectsOption() {
     setState(() {
@@ -37,6 +40,22 @@ class _MainAppState extends State<MainApp> {
   void play(int userOption) {
     _userSelectsOption(userOption);
     _cpuSelectsOption();
+    _evaluate();
+  }
+
+  void _evaluate() {
+    if ((_currentUserOption == 1 && // Paper beats Rock
+            _currentCpuOption == 3) ||
+        (_currentUserOption == 2 &&
+            _currentCpuOption == 1) || // Scissors beats Paper
+        (_currentUserOption == 3 && _currentCpuOption == 2)) {
+      // Rock beats Scissors
+      _userScore++;
+    } else if (_currentUserOption == _currentCpuOption) {
+      _ties++;
+    } else {
+      _cpuScore++;
+    }
   }
 
   @override
@@ -64,9 +83,9 @@ class _MainAppState extends State<MainApp> {
             Text('Placar'),
             Row(
               children: <Widget>[
-                PlacarColumn(text: 'Você'),
-                PlacarColumn(text: 'Empate'),
-                PlacarColumn(text: 'Máquina'),
+                PlacarColumn(text: 'Você', score: _userScore),
+                PlacarColumn(text: 'Empate', score: _ties),
+                PlacarColumn(text: 'Máquina', score: _cpuScore),
               ],
             ),
             Text('Opções'),
